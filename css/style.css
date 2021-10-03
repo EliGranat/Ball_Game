@@ -1,0 +1,74 @@
+body {
+    background-color: lightseagreen;
+    color: navajowhite;
+    text-align: center;
+    background-image: url(../img/eli.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.cell {
+    width: 45px;
+    height: 45px;
+    border: solid 3px black;
+    /* text-align: center; */
+}
+
+.floor {
+    background-color: rgba(85, 107, 47, 0.815);
+    /* opacity: 80%; */
+    border-radius: 20%;
+}
+
+.cell img {
+    width: 40px;
+    height: auto;
+    /* opacity: 80%; */
+}
+
+.wall {
+    background-color: lightseagreen;
+    border-radius: 25%;
+}
+
+h2 {
+    font-size: 30px;
+    color: lightgoldenrodyellow;
+}
+
+h3 {
+    font-size: 72px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translatex(-50%);
+    color: yellow;
+    display: none;
+}
+
+table {
+    margin: 0 auto;
+}
+
+button {
+    font-size: 40px;
+    border-radius: 10%;
+    border: rgb(33, 44, 33) 5px solid;
+    background-color: dimgrey;
+    color: lightgoldenrodyellow;
+}
+
+
+/* ul li {
+    list-style: none;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: brown;
+}
+
+ul li:nth-child(odd) {
+    background-color: chartreuse;
+} */
