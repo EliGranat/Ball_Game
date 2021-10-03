@@ -23,13 +23,15 @@ function init() {
     gBoard = buildBoard();
     setRandomPosition();
     renderBoard(gBoard);
+    clearInterval(gAddBallInterval);
+    clearInterval(gAddGlueInterval);
 }
 
 function restartGame() {
     var elH3 = document.querySelector('h3');
     elH3.style.display = 'none';
     init();
-    gAddBallInterval = setInterval(addBallRandom, 1070);
+    gAddBallInterval = setInterval(addBallRandom, 1200);
     gAddGlueInterval = setInterval(addGlueRandom, 2000);
     var elScore = document.querySelector('h2 span');
     elScore.innerText = gScore;
@@ -41,7 +43,7 @@ function changeScore() {
     elScore.innerText = gScore;
     var audio = new Audio('./sound/ballSound.mp3');
     audio.play();
-    if (gScore === gBallCounter) {
+    if (gScore === gBallCounter || gScore >= 120) {
         clearInterval(gAddBallInterval);
         clearInterval(gAddGlueInterval);
         var elH3 = document.querySelector('h3');

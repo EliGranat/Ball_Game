@@ -1,4 +1,5 @@
 body {
+    user-select: none;
     background-color: lightseagreen;
     color: navajowhite;
     text-align: center;
